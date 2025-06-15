@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Resume Builder</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>🖌️ Creative Resume Builder</h2>
+  <div class="container">
+    <form id="resumeForm">
+      <input type="text" id="fullName" placeholder="Full Name">
+      <input type="text" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <input type="text" id="linkedin" placeholder="LinkedIn URL">
+      <input type="text" id="github" placeholder="GitHub URL">
+      <textarea id="summary" rows="3" placeholder="Professional Summary"></textarea>
+      <textarea id="skills" rows="3" placeholder="Skills (comma separated)"></textarea>
+      <textarea id="education" rows="3" placeholder="Education"></textarea>
+      <textarea id="experience" rows="3" placeholder="Work Experience / Internships"></textarea>
+      <textarea id="projects" rows="3" placeholder="Projects"></textarea>
+      <textarea id="certifications" rows="2" placeholder="Certifications"></textarea>
+      <textarea id="awards" rows="2" placeholder="Achievements & Awards"></textarea>
+      <textarea id="activities" rows="2" placeholder="Leadership & Activities"></textarea>
+      <textarea id="languages" rows="2" placeholder="Languages Known"></textarea>
+      <textarea id="hobbies" rows="2" placeholder="Interests / Hobbies"></textarea>
+      <button type="button" onclick="generatePreview()">🎯 Preview</button>
+      <button type="button" onclick="downloadPDF()">📥 Download PDF</button>
+    </form>
+
+    <div class="preview" id="resumePreview">
+      <h3 id="namePreview"></h3>
+      <p id="contactPreview"></p>
+      <h4>Professional Summary</h4>
+      <p id="summaryPreview"></p>
+      <h4>Skills</h4>
+      <ul id="skillsPreview"></ul>
+      <h4>Education</h4>
+      <p id="educationPreview"></p>
+      <h4>Work Experience / Internships</h4>
+      <p id="experiencePreview"></p>
+      <h4>Projects</h4>
+      <p id="projectsPreview"></p>
+      <h4>Certifications</h4>
+      <p id="certificationsPreview"></p>
+      <h4>Achievements & Awards</h4>
+      <p id="awardsPreview"></p>
+      <h4>Leadership & Activities</h4>
+      <p id="activitiesPreview"></p>
+      <h4>Languages Known</h4>
+      <p id="languagesPreview"></p>
+      <h4>Interests / Hobbies</h4>
+      <p id="hobbiesPreview"></p>
+    </div>
+  </div>
+</body>
+</html>
